@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Budget, bikcraft.">
+  <title>Bikcraft | Budget</title>
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="stylesheet" href="css/style.css">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+<script>
+  document.documentElement.classList.add('js')
+</script>
+<link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+</head>
+<body id="budget">
+   <header class="header-bg">
+    <div class="header container">
+      <a class="logo" href="index.html">
+        <img src="img/bikcraft.svg" alt="logo">
+      </a>
+      <nav aria-label="primmary">
+        <ul class="header-menu font-1-m">
+         <li><a href="bicycles.html">Bicycles</a></li>
+          <li><a href="secures.html">Secures</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-icon">
+        <input type="checkbox" id="checkbox-menu">
+      <label for="checkbox-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="title-bg">
+      <div class="title container">
+        <p class="font-2-l-b color-5">QUOTES IN YOUR EMAIL</p>
+        <h1 class="font-1-xxl color-0">request a quote<span class="color-p1">.</span></h1>
+      </div>
+    </div>
+
+    <form class="budget container" action="#">
+      <div class="budget-product">
+          <h2 class="font-1-xs color-5">Bikcraft or Secure?</h2>
+            <input type="radio" name="type" value="bikcraft" id="bikcraft">
+            <label for="bikcraft">Bikcraft</label>
+            <input type="radio" name="type" value="secure" id="secure">
+            <label for="secure">Secure</label>
+            <div class="budget-content" id="budget-bikcraft">
+              <h2 class="font-1-xs color-5">choose your bikcraft</h2>
+
+              <input type="radio" name="product" value="nimbus" id="nimbus">
+              <label for="nimbus">Nimbus Stark <span>$ 4499</span></label>
+              <div class="budget-detail">
+                <ul>
+                  <li><img src="img/icons/electric.svg">Eletric Motor</li>
+                  <li><img src="img/icons/carbon.svg">Carbon Fiber</li>
+                  <li><img src="img/icons/speed.svg">50 km/h</li>
+                  <li><img src="img/icons/tracker.svg">Rastreador</li>
+                </ul>
+                <img src="img/bicycles/nimbus.jpg">
+              </div>
+
+              <input type="radio" name="product" value="magic" id="magic">
+              <label for="magic">Magic Might <span>$ 3499</span></label>
+              <div class="budget-detail">
+                <ul>
+                  <li><img src="img/icons/electric.svg">Eletric Motor</li>
+                  <li><img src="img/icons/carbon.svg">Carbon Fiber</li>
+                  <li><img src="img/icons/speed.svg">45 km/h</li>
+                  <li><img src="img/icons/tracker.svg">Rastreador</li>
+                </ul>
+                <img src="img/bicycles/magic.jpg">
+              </div>
+
+              <input type="radio" name="product" value="nebula" id="nebula">
+              <label for="nebula">Nebula Cosmic <span>$ 2499</span></label>
+              <div class="budget-detail">
+                <ul>
+                  <li><img src="img/icons/electric.svg">Eletric Motor</li>
+                  <li><img src="img/icons/carbon.svg">Carbon Fiber</li>
+                  <li><img src="img/icons/speed.svg">35 km/h</li>
+                  <li><img src="img/icons/tracker.svg">Rastreador</li>
+                </ul>
+                <img src="img/bicycles/nebula.jpg">
+              </div>
+              </div>
+              <div class="budget-content" id="budget-secure">
+              <h2 class="font-1-xs color-5">choose your plan</h2>
+
+              <input type="radio" name="product-s" value="silver" id="silver">
+              <label for="silver">Silver <span>$ 199</span></label>
+
+              <input type="radio" name="product-s" value="gold" id="gold">
+              <label for="gold">Gold <span>$ 299</span></label>
+            </div>
+      </div>
+      <div class="budget-data form">
+        <h2 class="font-1-xs color-9 col-2">personal data</h2>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name">
+        </div>
+        <div>
+          <label for="surname">Surname</label>
+          <input type="text" id="surname" name="surname" placeholder="Your Surname">
+        </div>
+        <div class="col-2">
+          <label for="cpf">CPF</label>
+          <input type="number" id="name" name="name" placeholder="000.000.00-00">
+        </div>
+        <div class="col-2">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="e-mail">
+        </div>
+        <h2 class="font-1-xs color-9 col-2">Delivery</h2>
+        <div>
+          <label for="cep">CEP</label>
+          <input type="number" id="cep" name="cep">
+        </div>
+        <div>
+          <label for="number-p">Number Phone</label>
+          <input type="number" id="number-p" name="number-p">
+        </div>
+        <div>
+          <label for="city">City</label>
+          <input type="text" id="city" name="city">
+        </div>
+        <div>
+          <label for="state">State</label>
+          <input type="text" id="state" name="state">
+        </div>
+        <button class="button col-2">budget requests</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <a class="footer-logo" href="index.html">
+        <img src="img/bikcraft.svg" alt="logo">
+      </a>
+      <div class="footer-contact">
+        <h3 class="font-2-l-b color-0">Contact</h3>
+        <ul class="font-2-m color-5">
+          <li><a href="tel:+12199999999">+1 (305) 9999-9999</a></li>
+          <li><a href="mailto:contact@bikcraft.com">contact@bikcraft.com</a></li>
+          <li>51 Westward Street - Miami Springs</li>
+          <li>Florida - FL</li>
+        </ul>
+        <div class="footer-social">
+          <a href="#">
+            <img src="img/social/instagram.svg" alt="instagram">
+          </a>
+          <a href="#">
+            <img src="img/social/facebook.svg" alt="facebook">
+          </a>
+          <a href="#">
+            <img src="img/social/youtube.svg" alt="youtube">
+          </a>
+        </div>
+      </div>
+        <div class="footer-information">
+          <h3 class="font-2-l-b color-0">information</h3>
+          <nav>
+            <ul class="font-1-l color-5">
+              <li><a href="bicycles.html">Bicycles</a></li>
+              <li><a href="secures.html">Secures</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="terms.html">Terms and Conditions</a></li>
+            </ul>
+          </nav>
+        </div>
+      <p class="footer-copy font-2-m color-6">Bikcraft © Some rights reserved.</p>
+    </div>
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

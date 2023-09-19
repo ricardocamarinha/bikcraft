@@ -1,0 +1,17 @@
+.terms {
+  padding: 50px 10px;
+}
+
+.terms h2 {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.terms p + h2 {
+  margin-top: 20px;
+}
+
+.terms p {
+  max-width: 80ch;
+  margin-bottom: 24px;
+}

@@ -1,0 +1,78 @@
+#contact {
+  background: linear-gradient(var(--color-11) 600px, var(--color-0) 0px);
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  margin-bottom: 100px;
+}
+
+#contact .button{
+  display: block;
+}
+
+.contact-data,
+.contact-form {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgb(0, 0, 0, 0.1);
+}
+
+.contact-data {
+  background-color: var(--color-12);
+  border-radius: 5px 0 0 5px;
+}
+
+.contact-form {
+  background-color: var(--color-0);
+  border-radius: 0 5px 5px 0;
+}
+
+.contact-data h2 {
+  margin-bottom: 60px;
+}
+
+.contact-address {
+  background: url(../../img/icons/location.svg) no-repeat;
+  padding-left: 24px;
+  margin-bottom: 32px;
+}
+
+.contact-mails a{
+  display: block;
+  max-width: max-content;
+  margin-bottom: 8px;
+  padding-left: 28px;
+}
+
+.contact-mails a:hover {
+  color: var(--color-0);
+}
+
+.contact-mails a:first-child {
+  background: url(../../img/icons/email.svg) no-repeat;
+  margin-top: 40px;
+
+}
+
+.contact-mails a:nth-child(3) {
+  background: url(../../img/icons/telephone.svg) no-repeat;
+  margin: 40px 0;
+}
+
+.contact-social {
+  display: flex;
+  gap: 30px;
+  padding-left: 28px;
+}
+
+@media (max-width: 800px) {
+  .contact{
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form,
+  .contact-data {
+    border-radius: 0;
+  }
+}

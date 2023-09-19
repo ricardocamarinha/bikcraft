@@ -1,0 +1,163 @@
+#budget {
+  background: linear-gradient(var(--color-11) 600px, var(--color-0) 0px);
+}
+
+.budget {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: 120px;
+  padding: 20px;
+}
+
+.budget-data {
+  background: var(--color-0);
+  border-radius: 0 5px 5px 0;
+}
+
+.budget h2 {
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.budget h2::before {
+  display: inline-block;
+  content: "";
+  width: 4px;
+  height: 8px;
+  background: var(--color-p1); position: absolute;
+  left: -12px;
+}
+
+.budget-product,
+.budget-data {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0 ,0, 0.1);
+}
+
+.budget-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 10px;
+  background: var(--color-12);
+  border-radius: 5px 0 0 5px;
+}
+
+.budget-product > * {
+  grid-column: 1/-1;
+}
+
+.budget-product > label {
+  grid-column: initial;
+}
+
+.budget-product label {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  font: 600 1rem/1.6 "poppins", sans-serif;
+  background: var(--color-10);
+  border: 1px solid var(--color-10);
+  color: var(--color-4);
+  padding: 12px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.budget-product label::before {
+  box-sizing: border-box;
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--color-12);
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.budget-content {
+  display: none;
+}
+
+.budget-product label:hover {
+  background: var(--color-9);
+}
+
+.budget-product input:checked + label::before {
+  box-shadow: inset 0 0 0 5px var(--color-p1);
+}
+
+.budget-product label span {
+  display: none;
+}
+
+.budget-product input:focus + label {
+  border: 1px solid var(--color-p1);
+}
+
+.budget-product input:checked + label span {
+  display: inline-block;
+}
+
+.budget-product input:checked + label {
+  background: var(--color-0);
+  color: var(--color-12);
+}
+
+.budget-product input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.budget-content h2 {
+  margin-top: 20px;
+}
+
+#bikcraft:checked ~ #budget-bikcraft {
+  display: grid;
+  gap: 10px;
+}  
+
+#secure:checked ~ #budget-secure {
+  display: grid;
+  gap: 10px;
+}
+
+.budget-detail {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 6px;
+  background: var(--color-0);
+  padding: 20px;
+  align-items: center;
+}
+
+.budget-detail li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.budget-detail li img {
+  width: 16px;
+  margin-right: 8px;
+}
+
+.budget-product input:checked + label + .budget-detail {
+  display: grid;
+}
+
+@media (max-width: 800px) {
+  .budget {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .budget-product {
+    grid-template-columns: 1fr;
+  }
+}

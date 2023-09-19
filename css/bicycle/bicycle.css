@@ -1,0 +1,132 @@
+.bicycle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 40px;
+  padding: 40 0;
+}
+
+.bicycle-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bicycle-images img {
+  min-width: 200px;
+  flex: 1;
+}
+
+.bicycle-images img:first-child {
+  min-width: 100%;
+}
+
+.bicycle-content p {
+  margin-bottom: 28px;
+}
+
+.bicycle-buy {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-items: start;
+  gap: 8px 16px;
+  margin-bottom: 40px;
+}
+
+.bicycle-buy img {
+  width: 16px;
+}
+
+.bicycle-buy a {
+  grid-row: span 2;
+}
+
+.bicycle-buy span {
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  background: var(--color-12);
+  padding: 4px 8px;
+  border-radius: 4px;
+  gap: 8px;
+}
+
+.bicycle-information,
+.bicycle-token {
+  margin-top: 20px;
+  padding: 26px;
+  background: var(--color-12);
+  border-radius: 8px;
+}
+
+.bicycle h2 {
+  font-size: 0.880rem;
+  letter-spacing: 1px;
+}
+
+.bicycle-information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.bicycle-information img {
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+.bicycle-information h3 {
+  margin-bottom: 8px;
+}
+
+.bicycle-token li {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--color-11);
+}
+
+.bicycle-token span {
+  color: var(--color-6);
+}
+
+.bicycle-token li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 900px) {
+  .title-bg {
+    padding: 12px;
+  }
+  
+  .bicycle {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+
+  .bicycle-images {
+    grid-row: 2;
+  }
+
+  .bicycle-information li {
+    padding: 10px;
+    background: var(--color-11);
+    border-radius: 8px
+  }
+}
+
+@media (max-width: 600px) {
+  .bicycle-information {
+    grid-template-columns: 1fr;
+  }
+}
+
+#bicycle .bicycle-list{
+  padding: 20px 0 0 0;
+}
+
+#bicycle .bicycle-list ul {
+  padding-bottom: 80px;
+}
